@@ -59,6 +59,7 @@ public class App {
         return Optional.empty();
     }
 
+    //poorman monad for each comprehension to explore possible solution
     private static List<Tuple<Segment, String>> doFindSolution(List<Segment> objects, List<String> pathSegments, List<Tuple<Segment, String>> es) {
         if (objects.size() > 0) {
             Segment segment = objects.get(0);
